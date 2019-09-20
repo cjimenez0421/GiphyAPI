@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX Giphy Button Review</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Pacifico&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body class="container">
+
+    <div class="jumbotron" id="header">
+        <img id="topImageL" src="assets/images/tenor.gif">
+        <img id="topImageR" src="assets/images/tenor.gif">
+        <h1 id="dodgers">Los Angeles Dodgers</h1>
+        <br>
+        <h4 id="instructions">Click the buttons to display GIPHYs for the Los Angeles Dodgers<br>Click the GIPHYs to pause and
+            play<br>Search to add more buttons!</h4>
+    </div>
+
+    <form class="form-inline" id="dodgerSearch">
+        <div class="form-group">
+            <label for="dodgerInput">Search for more Dodger gifs</label>
+            <input type="text" id="dodgerInput">
+        </div>
+        <!-- Button triggers show to be added -->
+        <input id="addShow" type="submit" value="submit">
+    </form>
+
+    <div class="row">
+        <div class="container">
+            <div class="btn-group">
+                <button class="btn btn-primary" id="show" data-search="Dodgers">Dodgers</button>
+                <button class="btn btn-primary" id="show" data-search="Jackie Robinson">Jackie Robinson</button>
+                <button class="btn btn-primary" id="show" data-search="Kirk Gibson">Kirk Gibson</button>
+                <button class="btn btn-primary" id="show" data-search="Justin Turner">Justin Turner</button>
+                <button class="btn btn-primary" id="show" data-search="Vin Scully">Vin Scully</button>
+                <button class="btn btn-primary" id="show" data-search="Clayton Kershaw">Clayton Kershaw</button>
+                <button class="btn btn-primary" id="show" data-search="Brooklyn Dodgers">Brooklyn Dodgers</button>
+                <div id="myButtons"></div>
+            </div>
+            <!--end of button group -->
+        </div>
+        <!--end of container -->
+    </div>
+    <!--end of row -->
+
+
+    <div class="row">
+        <div class="container">
+            <span>
+                <div id="gifArea"></div>
+            </span>
+        </div>
+        <!--end of container -->
+    </div> <!-- end of row  -->
+
+
+    <script type="text/javascript" src="assets/giphy.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+
+</html>
